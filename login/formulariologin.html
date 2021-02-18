@@ -1,24 +1,51 @@
 <!DOCTYPE html>
-<html lang= "pt-br">
-    <head>
-        <title> Formulário</title>
-        <meta charset="UTF-8">
-        <script src = "acesso.js"> </script>
-    </head>
-    <body>
-        <h1> Login </h1>
-        <form class="formulario">
-            <div class="input-container">
-              <i class="fas fa-envelope icon"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-container">
-              <i class="fas fa-key icon"></i>
-              <input type="password" placeholder="Senha" />
-            </div>
-            <input type="submit" value="Entrar" class="button" />
-            <p>Não possui uma conta? <a class="link" href="/index.html">Cadastre-se!</a></p>
-          </form>
-    </body>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://unpkg.com/css-doodle@0.14.2/css-doodle.min.js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      src="https://kit.fontawesome.com/6726683f80.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul class="container">
+          <div>
+            <a href="/index.html"
+              ><img src="/img/logo-name.png" alt="octupus" class="logo"
+            /></a>
+          </div>
+        </ul>
+      </nav>
 
+      <div class="login-form" id="login">
+        <form class="formulario">
+          <h1>Login</h1>
+          <div class="input-container">
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-container">
+            <i class="fas fa-key icon"></i>
+            <input type="password" placeholder="Senha" />
+          </div>
+          <input type="submit" value="Entrar" class="button" />
+          <p>
+            Não possui uma conta?
+            <a class="link" href="/index.html">Cadastre-se!</a>
+          </p>
+        </form>
+      </div>
+    </header>
+  </body>
 </html>
