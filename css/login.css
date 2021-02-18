@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: -moz-linear-gradient(
+    top,
+    #eff2f7 0%,
+    #bbd1f1 32%,
+    #9ebeee 99%,
+    #9ebeee 99%,
+    #dce8fc 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #eff2f7 0%,
+    #bbd1f1 32%,
+    #9ebeee 99%,
+    #9ebeee 99%,
+    #dce8fc 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #eff2f7 0%,
+    #bbd1f1 32%,
+    #9ebeee 99%,
+    #9ebeee 99%,
+    #dce8fc 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff2f7', endColorstr='#dce8fc',GradientType=0 ); /* IE6-9 */
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: unset;
+  height: 100vh;
+}
+/*se a tela tiver pelo menos 400px, carregue estes estilos */
+@media (min-width: 300px) {
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+  }
+  header {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 250px;
+    padding: 0;
+    float: left;
+  }
+  .menu {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgb(160, 180, 189), 0 0 5px rgb(26, 46, 56);
+  }
+
+  .menu link {
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 1s, color 2s;
+  }
+  .menu .link {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .menu .link:active,
+  .menu .link:hover {
+    color: rgb(134, 180, 189);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(134, 180, 189), 0 0 5px rgb(160, 180, 189);
+  }
+  .menu .login:hover {
+    background-color: #969d89;
+    color: #969d89;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li {
+    list-style: none;
+    align-self: center;
+  }
+  .login-form {
+    padding: 6em;
+    margin-top: 3em;
+    width: auto;
+    text-align: left;
+  }
+
+  .formulario {
+    width: auto;
+    padding: 10px;
+    margin-top: 3em;
+  }
+  .formulario {
+    background: #5d949e;
+    box-shadow: 2px 2px 5px #949494;
+    padding: 4em;
+    margin-top: 1em;
+    float: right;
+    border: 5px black;
+    text-align: center;
+  }
+  .formulario h1 {
+    text-align: center;
+    color: rgb(1, 8, 31);
+    font-size: 40px;
+  }
+  .formulario .button {
+    border: none;
+    width: 80%;
+    color: white;
+    font-size: 1em;
+    background: #969d89;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  @media (min-width: 630px) {
+    .formulario .button {
+      margin-left: 3.5em;
+    }
+  }
+  .formulario p {
+    text-align: center;
+  }
+  .formulario .button:hover {
+    background: #aaa;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+  }
+  .input-container {
+    margin-bottom: 10px;
+  }
+  .icon {
+    min-width: 50px;
+    text-align: center;
+    color: aliceblue;
+  }
+  .formulario .link {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .login-form h1 {
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+  }
+  .login-form .titulo {
+    margin-top: 3em;
+    font-weight: bold;
+    color: black;
+    padding: 0;
+  }
+  .login-form h2 {
+    margin-top: 1em;
+    color: black;
+    margin-bottom: 2em;
+  }
+}
