@@ -47,7 +47,7 @@ body {
   /* breakpoint*/
   @media (min-width: 1300px) {
     .logo {
-      transform: translate(-70%, 0%);
+      transform: translate(-50%, 0%);
     }
   }
   .menu link {
@@ -67,9 +67,10 @@ body {
     box-shadow: 0 0 5px rgb(134, 180, 189), 0 0 5px rgb(160, 180, 189);
   }
   .menu .login:hover {
-    background-color: #969d89;
-    color: #969d89;
+    color: #2e6a92;
+    background-color: rgb(2, 0, 36);
   }
+
   .menu ul {
     display: flex;
     justify-content: space-around;
@@ -110,11 +111,20 @@ body {
 
     text-shadow: 0 0 5px rgb(170, 180, 309), 0 0 5px rgb(160, 180, 189);
   }
+  .sobre .avatar,
+  .info .avatar {
+    margin-right: 3em;
+    padding: 2em;
+    margin-top: 1em;
+  }
   .sobre .avatar {
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
     animation: linear 2s animacaoSobre forwards;
+    float: left;
+    width: 40%;
   }
+
   @keyframes animacaoSobre {
     0% {
       transform: scale(0.2) translateY(50vh);
@@ -125,17 +135,18 @@ body {
       opacity: 1;
     }
   }
+
   .sobre {
     padding: 2em;
     min-height: 100vh;
-    background-color: #5d949e;
+    background-color: #5d949ec9;
     width: auto;
     align-items: center;
   }
 
   @media (min-width: 1200px) {
     .sobre,
-    .login-form {
+    .info {
       margin-left: auto;
       margin-right: auto;
       max-width: 1400px;
@@ -147,8 +158,9 @@ body {
     font-weight: bold;
     text-align: right;
     margin-top: 2em;
-    font-size: 3.5em;
+    font-size: 3em;
     color: white;
+    margin-bottom: 1em;
   }
   .sobre h2 {
     text-align: right;
@@ -163,99 +175,34 @@ body {
     margin-bottom: 0.5em;
     font-size: 22px;
     font-weight: lighter;
+    font-family: Roboto;
   }
-
-  .sobre .avatar {
-    width: 40%;
-    float: left;
-    margin-right: 3em;
-    padding: 2em;
-    margin-top: 1em;
+  .info .avatar {
+    float: right;
+    width: 60%;
   }
-
-  .login-form {
+  .info {
     padding: 2em;
     min-height: 100vh;
-    background-color: whitesmoke;
+    background-color: white;
     width: auto;
     text-align: left;
   }
 
-  .formulario {
-    width: auto;
-    padding: 10px;
-    float: right;
-    margin-top: 3em;
-  }
-  .formulario {
-    background: #5d949e;
-    box-shadow: 1px 1px 5px #797979;
-    margin-right: 3em;
-    padding: 2em;
-    margin-top: 1em;
-    float: right;
-    border: 5px black;
-  }
-  .formulario h1 {
-    text-align: center;
-    color: rgb(1, 8, 31);
-    font-size: 40px;
-  }
-  .formulario .button {
-    border: none;
-    width: 80%;
-    color: white;
-    font-size: 1em;
-    background: #969d89;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 3.2em;
-  }
-  .formulario p {
-    text-align: center;
-  }
-  .formulario .button:hover {
-    background: #aaa;
-  }
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    font-size: 20px;
-    width: 85%;
-    padding: 10px;
-    border: none;
-  }
-  .input-container {
-    margin-bottom: 10px;
-  }
-  .icon {
-    min-width: 50px;
-    text-align: center;
-    color: aliceblue;
-  }
-  .formulario .link {
-    text-decoration: none;
-    color: whitesmoke;
-  }
-  .login-form h1 {
-    font-weight: bold;
-    color: whitesmoke;
-    padding: 20px;
-  }
-  .login-form .titulo {
+  .info .titulo {
     margin-top: 3em;
     font-weight: bold;
     color: black;
     padding: 0;
+    font-size: 2em;
   }
-  .login-form h2 {
+  .info h2 {
     margin-top: 1em;
     color: black;
     margin-bottom: 2em;
   }
 
-  .login-form .texto {
+  .info .texto {
     color: black;
     text-align: left;
     margin-bottom: 0.5em;
