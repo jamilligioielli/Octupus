@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #5d949e;
+  background-color: #0f6f80;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-style: unset;
   height: 100vh;
@@ -47,7 +47,7 @@ body {
   /* breakpoint*/
   @media (min-width: 1300px) {
     .logo {
-      transform: translate(-50%, 0%);
+      transform: translate(-40%, 0%);
     }
   }
   .menu .link {
@@ -70,10 +70,12 @@ body {
     color: #2e6a92;
     background-color: rgb(2, 0, 36);
   }
-
+  .menu .login{
+    transform: translate(+50%, 0%);
+  }
   .menu ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .menu li {
     list-style: none;
@@ -160,7 +162,6 @@ body {
     margin-top: 2em;
     font-size: 3em;
     color: white;
-    margin-bottom: 1em;
   }
   .sobre h2 {
     text-align: right;
