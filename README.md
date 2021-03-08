@@ -5,7 +5,6 @@ Repositório para o projeto web da disciplina de Projeto Integrado (PJI) do IFSP
 - Anai Rojas
 - Gabriella Araujo
 - Giovanna Lima
-- Gabrielle Borsari
 - Jamilli Gioielli
 
 # Sobre o projeto
