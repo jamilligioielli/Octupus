@@ -50,7 +50,7 @@ body {
       transform: translate(-50%, 0%);
     }
   }
-  .menu link {
+  .menu .link {
     padding: 10px 20px;
     display: block;
     transition: background-color 1s, color 2s;
