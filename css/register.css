@@ -136,14 +136,14 @@ body {
       margin-left: 1.5em;
     }
   }
-  .formulario .signuperror{
+  .formulario .signuperror {
     color: white;
     background: red;
     font-weight: bold;
     text-align: center;
     padding: 10px;
   }
-  .formulario .success{
+  .formulario .success {
     color: white;
     background: rgb(5, 107, 5);
     font-weight: bold;
@@ -156,7 +156,6 @@ body {
   }
   .formulario .button:hover {
     background: #2e6a92;
-   
   }
   input[type="text"],
   input[type="email"],
@@ -195,5 +194,4 @@ body {
     background: rgb(2, 0, 36);
     margin-bottom: 2em;
   }
-  
 }
