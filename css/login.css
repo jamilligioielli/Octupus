@@ -88,10 +88,7 @@ body {
     display: flex;
     justify-content: space-around;
   }
-  .menu li {
-    list-style: none;
-    align-self: center;
-  }
+ 
   .login-form {
     padding: 6em;
     margin-top: 0;
