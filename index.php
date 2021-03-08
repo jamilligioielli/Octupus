@@ -1,25 +1,18 @@
 <?php
-require './php/dbconfig.php'
-
+require './php/dbconfig.php';
+session_start();
 ?>
 
 <!DOCTYPE html>
 <html lang="eng">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <?php include('./php/head.php') ?>
+  <?php if (isset($_SESSION['userID'])) {
+    header('Location: ./home.php');
+  }
+  ?>
   <title>Octupus</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@800&family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="sortcut icon" href="./img/logo-name.png" type="image/png" />;
-  <script src="https://kit.fontawesome.com/6726683f80.js" crossorigin="anonymous"></script>
   <style>
     <?php include "./css/paginainicial.css" ?>
   </style>
@@ -42,8 +35,10 @@ require './php/dbconfig.php'
         <li>
           <a class="link" href="#contato">Contato </a>
         </li>
+        <?php if (!isset($_SESSION['userID'])) {
+          echo '<li><a class="link" href="./formulariologin.php">Login </a> </li>
         <li class="login">
-          <a href="./formulariologin.php"><button style="
+          <a href="./formregistration.php"><button style="
                   border: none;
                   color: white;
                   padding: 10px 30px;
@@ -58,10 +53,12 @@ require './php/dbconfig.php'
                   border-radius: 5px;
                   background: rgb(2, 0, 36);
                 ">
-              Login
-            </button>
-          </a>
-        </li>
+              Cadastre-se
+            </button></a></li>';
+        } else {
+          echo '<li><a class="link" href="./formulariologin.php">Acessar Dashboard </a> </li>';
+        }
+        ?>
       </ul>
     </nav>
   </header>
@@ -94,11 +91,11 @@ require './php/dbconfig.php'
     <section class="contato" id="contato">
       <p>Saiba mais em:</p>
       <div class="grid icons">
-        <a target="_blank" href="https://github.com/jamilligioielli/OctupusPJI">
+        <a target="_blank" href="https://github.com/jamilligioielli/Octupus">
           <i class="fab fa-github"></i>
         </a>
 
-        <a href="mailto:jamilligioielli@outlook.com">
+        <a href="mailto:octupus.contato@gmail.com">
           <i class="fas fa-envelope-square"></i>
         </a>
       </div>
