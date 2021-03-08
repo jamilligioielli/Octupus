@@ -5,13 +5,12 @@ session_start();
 <html lang="eng">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-  <script src="https://unpkg.com/css-doodle@0.14.2/css-doodle.min.js"></script>
+  <?php include('./php/head.php') ?>
+  <?php if (isset($_SESSION['userID'])) {
+    header('Location: home.php');
+  }
+  ?>
   <title>Login</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <script src="https://kit.fontawesome.com/6726683f80.js" crossorigin="anonymous"></script>
   <style>
     <?php include "./css/login.css" ?>
   </style>
@@ -26,24 +25,14 @@ session_start();
         </div>
 
       </ul>
+
     </nav>
-   
+
     <div class="login-form" id="login">
-    <div class=" footer">
+      <div class=" footer">
+      </div>
       <?php
-      if (isset($_SESSION['userID'])) {
-        echo '<li class="link"> <a href="./index.php"> Ir para o painel </a></li>';
-      } else {
-        echo '<li class="link"> Faça login para entrar </li>';
-      }
-      ?>
-    </div>
-      <?php
-      if (isset($_SESSION['userID'])) {
-        echo ' <form action="php/configlogout.php" method="post" >
-        <input type="submit" name="logout-submit" value="Logout" class="button" />
-        </form>';
-      } else {
+      if (!isset($_SESSION['userID'])) {
         echo '<form class="formulario" action="./php/configlogin.php" method="post">
         <h1>Login</h1>
         <div class="input-container">
@@ -71,7 +60,7 @@ session_start();
         echo '<p class="success"> Você está logado!</p>';
       }
       ?>
-      
+
 
     </div>
 
