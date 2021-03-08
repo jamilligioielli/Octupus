@@ -38,6 +38,12 @@
             echo '<p class="signuperror"> Usuário inválido</p>';
           } elseif ($_GET["error"] == "passwordcheck") {
             echo '<p class="signuperror"> As senhas não conferem</p>';
+          } elseif ($_GET["error"] == "usertaken&mail") {
+            echo '<p class="signuperror"> Usuário e email já existem</p>';
+          } elseif ($_GET["error"] == "usertaken") {
+            echo '<p class="signuperror"> Usuário já existe</p>';
+          } elseif ($_GET["error"] == "mail") {
+            echo '<p class="signuperror"> Email já existem</p>';
           }
         } elseif (isset($_GET["signup"])) {
           echo '<p class="success"> Usuario criado com sucesso!</p>';
