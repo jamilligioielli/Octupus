@@ -19,7 +19,7 @@ do ensino médio na disciplina de matemática. <br> Pensando nisto, também fora
   <li>1- Baixe a pasta compactada </li>
  <li> 2- Utilizando o Xampp, extraia os arquivos em "./xampp/htdocs"</li>
  <li> 3- Inicialize o Xampp e em "http://localhost/phpmyadmin/" crie uma nova database (banco de dados) chamada "octupus". <br></li>
-  <li> 4- Depois, na aba "Importar", selecione o arquivo "octupus.sql" disponível na pasta do projeto e aperte "executar"</li>
+  <li> 4- Depois, na aba "Importar", selecione o arquivo "octupus.sql" disponível na pasta "documentacao" do projeto e aperte "executar"</li>
  <li> 5- Por último, abra no seu navegador a URL localhost/octupus/</li>
  <li> 6- Agora é só aproveitar!</li>
   
