@@ -1,6 +1,8 @@
 # Projeto Octupus 
 Repositório para o projeto web da disciplina de Projeto Integrado (PJI) do IFSP-SPO com alunas da turma 213 de Informática.
 
+![](https://https://github.com/jamilligioielli/Octupus/apresentacao/octupus_paginainicial.png)
+
 # Integrantes da Equipe:
 - Anai Rojas
 - Gabriella Araujo
